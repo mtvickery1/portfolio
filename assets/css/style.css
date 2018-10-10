@@ -1,0 +1,158 @@
+body, html{
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+div div div a {
+    z-index: 0 !important;
+}
+
+/*////////////////////////////////////////////////////////////////////////
+/* HEADER */
+/*///////////////////////////////////////////////////////////////////////*/
+nav {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.8) !important;
+    padding: 0 20px;
+    font-family: monospace;
+    z-index: 1;
+}
+
+nav div ul li a,
+nav div a {
+    color: black !important;
+}
+
+.hover-orange:hover {
+    background: rgb(255, 165, 0, .8);
+}
+
+/*////////////////////////////////////////////////////////////////////////
+/* LANDING PAGE */
+/*///////////////////////////////////////////////////////////////////////*/
+.gorge {
+    background-image: url("../images/emory.jpg");
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    padding-top: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+/*////////////////////////////////////////////////////////////////////////
+/* TYPING ANIMATION */
+/*///////////////////////////////////////////////////////////////////////*/
+.typewriter h2 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+    blink-caret .5s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+/*////////////////////////////////////////////////////////////////////////
+/* SCROLLING CSS */
+/*///////////////////////////////////////////////////////////////////////*/
+.scrolled {
+    background: rgb(0, 0, 0) !important;
+}
+.scrolled-font {
+    color: white !important;
+}
+
+/*////////////////////////////////////////////////////////////////////////
+/* ABOUT */
+/*///////////////////////////////////////////////////////////////////////*/
+#about-me {
+    background: url("../images/dark.png");
+}
+
+.green-border {
+    border-style: solid;
+    border-width: 10px 0;
+    border-color: rgb(0, 128, 0, .5);
+    padding: 0 40px 40px 40px;
+}
+
+.white-background {
+    background: rgba(255, 255, 255, 0.5);
+    height: 170px;
+    width: 170px;
+    padding-top: 10px;
+    margin: 0 auto;
+    color: #1F1F1F;
+    border-style: solid;
+    border-width: 10px 0;
+    border-color: rgb(255, 165, 0, .8);
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.white-background:hover {
+    transform: rotate(360deg);
+}
+
+h2 {
+    font-weight: bold;
+}
+
+#slashes {
+    color: rgb(255, 165, 0, .8);
+}
+
+
+/*////////////////////////////////////////////////////////////////////////
+/* PORTFOLIO */
+/*///////////////////////////////////////////////////////////////////////*/
+#portfolio {
+    background: url("../images/dark.png");
+}
+
+.orange-border {
+    border-style: solid;
+    border-width: 10px 0;
+    border-color: rgb(255, 165, 0, .8);
+    /* padding: 0 40px 40px 40px; */
+}
+
+#project-slashes {
+    color: rgb(0, 128, 0, .5);
+}
+
+.card-body {
+    background: #4A626F !important;
+}
+
+/*////////////////////////////////////////////////////////////////////////
+/* CONTACT */
+/*///////////////////////////////////////////////////////////////////////*/
+#contact {
+    color: #1F1F1F;
+}
+
+.icon-size {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-space {
+    padding-right: 10px;
+}
