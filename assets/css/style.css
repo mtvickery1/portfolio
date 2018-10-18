@@ -1,9 +1,12 @@
 body, html{
     height: 100%;
-    font-family: 'Ubuntu', sans-serif;
-    color: rgba(255, 255, 255, 0.5);
+    font-family: monospace;
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Indie Flower', cursive; */
+    color: black;
 }
 
+/* For project buttons. They are overlapping navbar for some reason */
 div div div a {
     z-index: 0 !important;
 }
@@ -19,14 +22,19 @@ nav {
     z-index: 1;
 }
 
+/* text color */
 nav div ul li a,
 nav div a {
     color: black !important;
 }
 
-.hover-orange:hover {
-    background: rgb(255, 165, 0, .8);
+/* hover color */
+.nav-effect:hover {
+    background: rgb(99, 194, 222);
 }
+
+/* clicked color */
+.highlight {background: rgb(99, 194, 222);}
 
 /*////////////////////////////////////////////////////////////////////////
 /* LANDING PAGE */
@@ -51,7 +59,7 @@ nav div a {
     color: #fff;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
+    border-right: .15em solid rgb(99, 194, 222); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -66,7 +74,7 @@ nav div a {
 /* The typewriter cursor effect */
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: orange }
+    50% { border-color: rgb(99, 194, 222); }
 }
 
 /*////////////////////////////////////////////////////////////////////////
@@ -83,13 +91,13 @@ nav div a {
 /* ABOUT */
 /*///////////////////////////////////////////////////////////////////////*/
 #about-me {
-    background: url("../images/dark.png");
+    background: #E7F5F9;
 }
 
 .green-border {
     border-style: solid;
     border-width: 10px 0;
-    border-color: rgb(0, 128, 0, .5);
+    border-color: white;
     padding: 0 40px 40px 40px;
 }
 
@@ -102,7 +110,7 @@ nav div a {
     color: #1F1F1F;
     border-style: solid;
     border-width: 10px 0;
-    border-color: rgb(255, 165, 0, .8);
+    border-color: rgb(99, 194, 222, .8);
     transition: width 2s, height 2s, transform 2s;
 }
 
@@ -120,10 +128,12 @@ h2 {
 
 
 /*////////////////////////////////////////////////////////////////////////
-/* PORTFOLIO */
+/* PROJECTS */
 /*///////////////////////////////////////////////////////////////////////*/
 #portfolio {
     background: url("../images/dark.png");
+    height: 94%;
+    width: 100%;
 }
 
 .orange-border {

@@ -1,10 +1,11 @@
+AOS.init();
 /////////////////////////////////////////////////////////////////////////
 // TYPING ANIMATION
 /////////////////////////////////////////////////////////////////////////
 var i = 0;
-var txt1 = 'Hello, ';
-var txt2 = 'My name is Mason.';
-var txt3 = 'Welcome to my page!';
+var txt1 = 'Hello, My name is Mason. Welcome to my page!';
+// var txt2 = 'My name is Mason.';
+// var txt3 = 'Welcome to my page!';
 var speed = 100;
 
 function hello() {
@@ -17,30 +18,30 @@ function hello() {
         return i;
     }
 }
-function name() {
-    if (i < txt2.length) {
-        document.getElementById("name").innerHTML += txt2.charAt(i);
-        i++;
-        setTimeout(name, speed);
-    } else {
-        i = 0;
-        return i;
-    }
-}
-function welcome() {
-    if (i < txt3.length) {
-        document.getElementById("welcome").innerHTML += txt3.charAt(i);
-        i++;
-        setTimeout(welcome, speed);
-    } else {
-        i = 0;
-        return i;
-    }
-}
+// function name() {
+//     if (i < txt2.length) {
+//         document.getElementById("name").innerHTML += txt2.charAt(i);
+//         i++;
+//         setTimeout(name, speed);
+//     } else {
+//         i = 0;
+//         return i;
+//     }
+// }
+// function welcome() {
+//     if (i < txt3.length) {
+//         document.getElementById("welcome").innerHTML += txt3.charAt(i);
+//         i++;
+//         setTimeout(welcome, speed);
+//     } else {
+//         i = 0;
+//         return i;
+//     }
+// }
 
 setTimeout(hello, 500);
-setTimeout(name, 2500);
-setTimeout(welcome, 5500);
+// setTimeout(name, 2500);
+// setTimeout(welcome, 5500);
 
 /////////////////////////////////////////////////////////////////////////
 // PARALAX
@@ -60,7 +61,7 @@ $('.carousel.carousel-slider').carousel({
 /////////////////////////////////////////////////////////////////////////
 $(document).ready(function () {
     $(window).scroll(function () {
-
+        // Nav background color change
         if ($(window).scrollTop() > 500) {
             $("nav").addClass("scrolled");
             $("nav div ul li a" && "nav div a").addClass("scrolled-font");
@@ -68,7 +69,32 @@ $(document).ready(function () {
             $("nav").removeClass("scrolled");
             $("nav div ul li a" && "nav div a").removeClass("scrolled-font");
         }
+        // // Nav scroll highlight feature - About
+        // if ($(window).scrollTop() > 885) {
+        //     $(".nav-about").parent().addClass("highlight");
+        //     if ($(window).scrollTop() > 1429) {
+        //         $(".nav-effect").removeClass("highlight");
+        //     }
+        // } else {
+        //     $(".nav-effect").removeClass("highlight");
+        // }
+        // // Nav scroll highlight feature - Projects
+        // if ($(window).scrollTop() > 1429) {
+        //     $(".nav-portfolio").parent().addClass("highlight");
+        //     if ($(window).scrollTop() > 1500) {
+        //         $(".nav-effect").removeClass("highlight");
+        //     }
+        // } else {
+        //     $(".nav-effect").removeClass("highlight");
+        // }
     });
+    // Nav click highlight feature
+    $('.nav-effect a').click(function () {
+        $(this).closest("li").addClass('highlight').siblings().removeClass('highlight');
+        return (false);   // no default behavior from clicking on the link
+    });
+
+
 });
 
 /////////////////////////////////////////////////////////////////////////
