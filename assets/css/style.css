@@ -4,6 +4,7 @@ body, html{
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-family: 'Indie Flower', cursive; */
     color: black;
+    box-sizing: border-box;
 }
 
 /* For project buttons. They are overlapping navbar for some reason */
@@ -42,14 +43,15 @@ nav div a {
 .gorge {
     background-image: url("../images/emory.jpg");
     background-attachment: fixed;
-    /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     width: 100%;
-    padding-top: 400px;
     display: flex;
     justify-content: center;
+}
+.typewriter {
+    padding-top: 500px;
 }
 
 /*////////////////////////////////////////////////////////////////////////
@@ -90,19 +92,32 @@ nav div a {
 /*////////////////////////////////////////////////////////////////////////
 /* ABOUT */
 /*///////////////////////////////////////////////////////////////////////*/
-#about-me {
-    background: #E7F5F9;
+.trees {
+    background-image: url("../images/trees.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 94%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-style: solid;
+    border-width: 10px 0 10px 0;
+    border-color: rgb(99, 194, 222);
 }
 
-.green-border {
+#about-me {
+    background: #E7F5F9;
+    margin: 50px 0 50px 0;
     border-style: solid;
     border-width: 10px 0;
-    border-color: white;
-    padding: 0 40px 40px 40px;
+    border-color: rgb(99, 194, 222);
+    
+    border-radius: 40%;
 }
 
 .white-background {
-    background: rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255);
     height: 170px;
     width: 170px;
     padding-top: 10px;
@@ -110,12 +125,14 @@ nav div a {
     color: #1F1F1F;
     border-style: solid;
     border-width: 10px 0;
-    border-color: rgb(99, 194, 222, .8);
-    transition: width 2s, height 2s, transform 2s;
+    border-color: rgb(99, 194, 222);
+    border-radius: 15%;
 }
 
 .white-background:hover {
-    transform: rotate(360deg);
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 h2 {
@@ -123,14 +140,18 @@ h2 {
 }
 
 #slashes {
-    color: rgb(255, 165, 0, .8);
+    color: rgb(99, 194, 222);
+}
+
+#resume-button {
+    background: rgb(99, 194, 222);
 }
 
 
 /*////////////////////////////////////////////////////////////////////////
 /* PROJECTS */
 /*///////////////////////////////////////////////////////////////////////*/
-#portfolio {
+#projects {
     background: url("../images/dark.png");
     height: 94%;
     width: 100%;
@@ -140,7 +161,7 @@ h2 {
     border-style: solid;
     border-width: 10px 0;
     border-color: rgb(255, 165, 0, .8);
-    /* padding: 0 40px 40px 40px; */
+    padding: 0 40px 40px 40px;
 }
 
 #project-slashes {

@@ -100,15 +100,17 @@ $(document).ready(function () {
 /////////////////////////////////////////////////////////////////////////
 // SMOOTH SCROLL ON CLICK
 /////////////////////////////////////////////////////////////////////////
-var fromTop = 60;
+var fromTop;
 $(".nav-about").click(function () {
+    fromTop = 120;
     $('html,body').animate({
         scrollTop: $("#about-me").offset().top - fromTop
     }, 'slow');
 });
-$(".nav-portfolio").click(function () {
+$(".nav-projects").click(function () {
+    fromTop = 60;
     $('html,body').animate({
-        scrollTop: $("#portfolio").offset().top - fromTop
+        scrollTop: $("#projects").offset().top - fromTop
     }, 'slow');
 });
 $(".nav-contact").click(function () {
