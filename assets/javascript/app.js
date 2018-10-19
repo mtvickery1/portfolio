@@ -1,47 +1,5 @@
 AOS.init();
-/////////////////////////////////////////////////////////////////////////
-// TYPING ANIMATION
-/////////////////////////////////////////////////////////////////////////
-var i = 0;
-var txt1 = 'Hello, My name is Mason. Welcome to my page!';
-// var txt2 = 'My name is Mason.';
-// var txt3 = 'Welcome to my page!';
-var speed = 100;
 
-function hello() {
-    if (i < txt1.length) {
-        document.getElementById("hello").innerHTML += txt1.charAt(i);
-        i++;
-        setTimeout(hello, speed);
-    } else {
-        i = 0;
-        return i;
-    }
-}
-// function name() {
-//     if (i < txt2.length) {
-//         document.getElementById("name").innerHTML += txt2.charAt(i);
-//         i++;
-//         setTimeout(name, speed);
-//     } else {
-//         i = 0;
-//         return i;
-//     }
-// }
-// function welcome() {
-//     if (i < txt3.length) {
-//         document.getElementById("welcome").innerHTML += txt3.charAt(i);
-//         i++;
-//         setTimeout(welcome, speed);
-//     } else {
-//         i = 0;
-//         return i;
-//     }
-// }
-
-setTimeout(hello, 500);
-// setTimeout(name, 2500);
-// setTimeout(welcome, 5500);
 
 /////////////////////////////////////////////////////////////////////////
 // PARALAX
@@ -108,7 +66,7 @@ $(".nav-about").click(function () {
     }, 'slow');
 });
 $(".nav-projects").click(function () {
-    fromTop = 60;
+    fromTop = 70;
     $('html,body').animate({
         scrollTop: $("#projects").offset().top - fromTop
     }, 'slow');

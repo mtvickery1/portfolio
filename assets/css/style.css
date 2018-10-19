@@ -1,10 +1,16 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body, html{
     height: 100%;
+    width: 100% !important;
     font-family: monospace;
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-family: 'Indie Flower', cursive; */
     color: black;
-    box-sizing: border-box;
 }
 
 /* For project buttons. They are overlapping navbar for some reason */
@@ -35,7 +41,9 @@ nav div a {
 }
 
 /* clicked color */
-.highlight {background: rgb(99, 194, 222);}
+.highlight {
+    background: rgb(99, 194, 222);
+}
 
 /*////////////////////////////////////////////////////////////////////////
 /* LANDING PAGE */
@@ -50,34 +58,11 @@ nav div a {
     display: flex;
     justify-content: center;
 }
-.typewriter {
-    padding-top: 500px;
-}
 
-/*////////////////////////////////////////////////////////////////////////
-/* TYPING ANIMATION */
-/*///////////////////////////////////////////////////////////////////////*/
-.typewriter h2 {
-    color: #fff;
-    font-family: monospace;
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid rgb(99, 194, 222); /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-    blink-caret .5s step-end infinite;
-}
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: rgb(99, 194, 222); }
-}
+
+
+
+
 
 /*////////////////////////////////////////////////////////////////////////
 /* SCROLLING CSS */
@@ -112,11 +97,10 @@ nav div a {
     border-style: solid;
     border-width: 10px 0;
     border-color: rgb(99, 194, 222);
-    
     border-radius: 40%;
 }
 
-.white-background {
+.about-icons {
     background: rgba(255, 255, 255);
     height: 170px;
     width: 170px;
@@ -129,13 +113,13 @@ nav div a {
     border-radius: 15%;
 }
 
-.white-background:hover {
+.about-icons:hover {
     -webkit-transform: scale(1.3);
     -ms-transform: scale(1.3);
     transform: scale(1.3);
 }
 
-h2 {
+#about-me div h2 {
     font-weight: bold;
 }
 
@@ -151,25 +135,39 @@ h2 {
 /*////////////////////////////////////////////////////////////////////////
 /* PROJECTS */
 /*///////////////////////////////////////////////////////////////////////*/
-#projects {
-    background: url("../images/dark.png");
-    height: 94%;
+.black-pattern {
+    background-image: url("../images/dark.png");
+    height: 93%;
     width: 100%;
+    border-style: solid;
+    border-width: 0 0 10px 0;
+    border-color: rgb(99, 194, 222);
 }
 
-.orange-border {
-    border-style: solid;
-    border-width: 10px 0;
-    border-color: rgb(255, 165, 0, .8);
+#projects {
+    color: #E7F5F9;
     padding: 0 40px 40px 40px;
 }
 
-#project-slashes {
-    color: rgb(0, 128, 0, .5);
+.projects-slashes {
+    color: rgb(99, 194, 222);
+}
+
+#projects div h2 {
+    margin: 0;
+    padding-top: 40px;
+
 }
 
 .card-body {
-    background: #4A626F !important;
+    background: #E7F5F9 !important;
+    color: black;
+}
+
+.card {
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(99, 194, 222);
 }
 
 /*////////////////////////////////////////////////////////////////////////
@@ -186,4 +184,23 @@ h2 {
 
 .icon-space {
     padding-right: 10px;
+}
+
+/* Resizes Landing Background */
+@media screen and (max-width: 1080px) {
+    .gorge {
+        background-image: url("../images/emory.jpg");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%; 
+    margin: 0px;
+    padding: 0px;
+    max-width: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
 }
