@@ -220,6 +220,19 @@ nav div a {
     border-color: rgb(99, 194, 222);
 }
 
+/* HOVER */
+.card-reveal{
+  color: #ffffff;
+  background-color: rgba(0,0,0,0.7) !important;
+}
+div.card-reveal span.card-title{
+  color: #ffffff !important;
+}
+
+.hover {
+    background-color: rgba(0,0,0,0.7) !important;
+}
+
 /*////////////////////////////////////////////////////////////////////////
 /* CONTACT */
 /*///////////////////////////////////////////////////////////////////////*/

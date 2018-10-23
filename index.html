@@ -2,30 +2,44 @@
 <html lang="en">
 
 <head>
+
+    <!-- ==============================================
+	Title and Meta Tags
+    =============================================== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mason Vickery | Portfolio</title>
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+
+    <!-- ==============================================
+	Fonts
+    =============================================== -->
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- ==============================================
+	CSS
+    =============================================== -->
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Linking Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 
 <body>
 
-    <!-- Top Navbar -->
+    <!-- ==============================================
+	TOP NAVBAR
+    =============================================== -->
     <nav id="navbar">
         <div class="nav-wrapper">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
@@ -45,7 +59,9 @@
         </div>
     </nav>
 
-    <!-- Side Navbar -->
+    <!-- ==============================================
+	SIDE NAVBAR
+    =============================================== -->
     <ul class="sidenav grey lighten-2" id="mobile-demo">
         <li class="nav-effect">
             <a class="nav-about side-about">About Me</a>
@@ -58,7 +74,9 @@
         </li>
     </ul>
 
-    <!-- Landing Page -->
+    <!-- ==============================================
+	LANDING PAGE
+    =============================================== -->
     <div class="gorge">
         <div id="hello-container" class="container">
             <div id="hello-content" class="row" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
@@ -79,7 +97,9 @@
 
 
 
-    <!-- ABOUT ME -->
+    <!-- ==============================================
+	ABOUT
+    =============================================== -->
     <div class="trees">
         <div id="about-me-container" class="container">
             <div id="about-me" class="row">
@@ -138,10 +158,11 @@
         </div>
     </div>
 
+    <!-- ==============================================
+	PROJECTS
+    =============================================== -->
     <!-- GRADIENT BACKGROUND -->
-
     <div class="bottombg">
-
 
         <div class="project-section">
             <div id="projects" class="section">
@@ -151,29 +172,132 @@
 
                 <div class="container">
 
+                    <div class="row">
 
-                    <div class="row card">
+                        <div class="col s12 right-align">
+                            <span class="header center-align">
+                                ALL
+                                <span class="projects-slashes">
+                                    |
+                                </span>
+                            </span>
+                            <span class="header center-align">
+                                FRONT END
+                                <span class="projects-slashes">
+                                    |
+                                </span>
+                            </span>
+                            <span class="header center-align">
+                                FULL STACK
+                            </span>
+                        </div>
 
+                        <!-- PROJECT -->
                         <div class="col s12 m6 l4">
-                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
-                        </div>
-                        <div class="col s12 m6 l4">
-                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
-                        </div>
-                        <div class="col s12 m6 l4">
-                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/roulette.jpg">
+                                </div>
+                                <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on.</p>
+                                </div>
+                            </div>
                         </div>
 
-
+                        <!-- PROJECT -->
                         <div class="col s12 m6 l4">
-                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/roulette.jpg">
+                                </div>
+                                <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on.</p>
+                                </div>
+                            </div>
                         </div>
 
+                        <!-- PROJECT -->
                         <div class="col s12 m6 l4">
-                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/roulette.jpg">
+                                </div>
+                                <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on.</p>
+                                </div>
+                            </div>
                         </div>
+
+                        <!-- PROJECT -->
                         <div class="col s12 m6 l4">
-                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/roulette.jpg">
+                                </div>
+                                <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT -->
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/roulette.jpg">
+                                </div>
+                                <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PROJECT -->
+                        <div class="col s12 m6 l4">
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img class="activator" src="assets/images/roulette.jpg">
+                                </div>
+                                <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                <div class="card-reveal">
+                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                    <p>Here is some more information about this product that is only revealed once
+                                        clicked on.</p>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
@@ -184,13 +308,16 @@
         </div>
 
 
-
+        <!-- ==============================================
+        FOOTER
+        =============================================== -->
         <footer class="page-footer footer">
             <div class="container">
                 <div class="row">
                     <div class="col s12">
                         <h5 class="white-text">Thanks for visiting my page!</h5>
-                        <p class="grey-text text-lighten-4">Don't hesitate to contact me for projects, employment, or
+                        <p class="grey-text text-lighten-4">Don't hesitate to contact me for projects, employment,
+                            or
                             just
                             talking tech!</p>
                     </div>
@@ -251,6 +378,13 @@
             </div>
         </footer>
     </div>
+
+    <!-- ==============================================
+    SCRIPTS
+    =============================================== -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <!-- Linking JavaScript -->
     <script src="assets/javascript/app.js"></script>
 </body>
