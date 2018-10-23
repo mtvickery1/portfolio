@@ -2,15 +2,20 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* border: 1px solid red; */
 }
 
 body, html{
-    height: 100%;
+    height: 100vh;
     width: 100% !important;
     font-family: monospace;
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-family: 'Indie Flower', cursive; */
     color: black;
+}
+
+.clearfix {
+    overflow: auto;
 }
 
 /* For project buttons. They are overlapping navbar for some reason */
@@ -45,6 +50,10 @@ nav div a {
     background: rgb(99, 194, 222);
 }
 
+.name {
+    font-size: 24px;
+}
+
 /*////////////////////////////////////////////////////////////////////////
 /* LANDING PAGE */
 /*///////////////////////////////////////////////////////////////////////*/
@@ -59,6 +68,25 @@ nav div a {
     justify-content: center;
 }
 
+#hello-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    color: rgb(231, 245, 249);
+    width: 75%;
+    margin-top: 200px;
+}
+
+#hello-content {
+    background: rgb(99, 194, 222, .5);
+    border-radius: 50%;
+    padding: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(231, 245, 249);
+}
+
 
 
 
@@ -69,6 +97,9 @@ nav div a {
 /*///////////////////////////////////////////////////////////////////////*/
 .scrolled {
     background: rgb(0, 0, 0) !important;
+    /* border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: rgb(99, 194, 222); */
 }
 .scrolled-font {
     color: white !important;
@@ -91,13 +122,24 @@ nav div a {
     border-color: rgb(99, 194, 222);
 }
 
+#about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
 #about-me {
-    background: #E7F5F9;
+    /* height: 85%; */
+    background: rgb(231, 245, 249, .8);
     margin: 50px 0 50px 0;
     border-style: solid;
     border-width: 10px 0;
     border-color: rgb(99, 194, 222);
-    border-radius: 40%;
+    border-radius: 15%;
+    /* position: absolute; */
+   
+
+    /* margin: auto; */
 }
 
 .about-icons {
@@ -127,21 +169,29 @@ nav div a {
     color: rgb(99, 194, 222);
 }
 
-#resume-button {
+#resume-button-color {
     background: rgb(99, 194, 222);
+}
+
+#resume-button {
+    padding-top: 20px;
 }
 
 
 /*////////////////////////////////////////////////////////////////////////
 /* PROJECTS */
 /*///////////////////////////////////////////////////////////////////////*/
-.black-pattern {
+.bottombg {
     background-image: url("../images/dark.png");
-    height: 93%;
+    /* height: 150%; */
     width: 100%;
-    border-style: solid;
-    border-width: 0 0 10px 0;
-    border-color: rgb(99, 194, 222);
+    /* position: relative; */
+
+}
+
+.project-section {
+    /* height: 61%; */
+    width: 100%;
 }
 
 #projects {
@@ -173,6 +223,28 @@ nav div a {
 /*////////////////////////////////////////////////////////////////////////
 /* CONTACT */
 /*///////////////////////////////////////////////////////////////////////*/
+.footer {
+    width: 100%;
+    /* height: 39%; */
+    padding-top: 160px;
+    background-color: rgb(99, 194, 222, .5) !important;
+    border-top-style: solid;
+    border-width: 10px 0 0 0;
+    border-color: rgb(99, 194, 222);
+    border-radius: 50% 50% 0 0;
+    /* position: absolute;
+    bottom: 0; */
+    
+}
+
+.copyright {
+    
+    color: white;
+    text-align: center;
+    
+    margin: 0 auto;
+}
+
 #contact {
     color: #1F1F1F;
 }
@@ -182,25 +254,59 @@ nav div a {
     height: 100px;
 }
 
-.icon-space {
+/* .icon-space {
     padding-right: 10px;
-}
+} */
 
 /* Resizes Landing Background */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1280px) {
     .gorge {
         background-image: url("../images/emory.jpg");
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%; 
-    margin: 0px;
-    padding: 0px;
-    max-width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%; 
+        margin: 0px;
+        padding: 0px;
+        max-width: 100%;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-position: 60% 40%;
+    }
+
+    .trees {
+        background-image: url("../images/trees.jpg");
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 93%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-style: solid;
+        border-width: 10px 0 10px 0;
+        border-color: rgb(99, 194, 222);
+    }
+
+}
+
+/* HIDE ABOUT ICONS */
+@media screen and (max-width: 748px) {
+
+    #hide-about-icons {
+        display: none;
+    }
+    #resume-button {
+        padding-top: 0;
     }
 }
+
+/* Didnt work */
+/* @media screen and (max-width: 480px) {
+    .name {
+        text-align: center !important;
+    }
+} */

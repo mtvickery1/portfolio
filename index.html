@@ -26,21 +26,20 @@
 <body>
 
     <!-- Top Navbar -->
-    <nav>
+    <nav id="navbar">
         <div class="nav-wrapper">
-            <a href="#!" class="brand-logo">Mason Vickery</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
                 <li class="nav-effect">
-                    <a class="nav-about">About Me</a>
+                    <a class="nav-about main-about">About Me</a>
                 </li>
                 <li class="nav-effect">
-                    <a class="nav-projects">Projects</a>
+                    <a class="nav-projects main-projects">Projects</a>
                 </li>
                 <li class="nav-effect">
-                    <a class="nav-contact">Contact</a>
+                    <a class="nav-contact main-contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -49,75 +48,89 @@
     <!-- Side Navbar -->
     <ul class="sidenav grey lighten-2" id="mobile-demo">
         <li class="nav-effect">
-            <a class="nav-about">About Me</a>
+            <a class="nav-about side-about">About Me</a>
         </li>
         <li class="nav-effect">
-            <a class="nav-projects">Projects</a>
+            <a class="nav-projects side-projects">Projects</a>
         </li>
         <li class="nav-effect">
-            <a class="nav-contact">Contact</a>
+            <a class="nav-contact side-contact">Contact</a>
         </li>
     </ul>
 
     <!-- Landing Page -->
     <div class="gorge">
-        <div>
-            <h2><span class="flow-text" id="hello"></span></h2>
+        <div id="hello-container" class="container">
+            <div id="hello-content" class="row" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
+                <div class="col s12 m12 l12 xl12">
+                    <div>
+                        <h4>Howdy! I'm Mason.</h4>
+                    </div>
+                </div>
+                <div class="col s12 m12 l12 xl12">
+                    <div>
+                        <h4>I'm a full-stack web developer</h4>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
+
+
 
     <!-- ABOUT ME -->
     <div class="trees">
-        <div class="container">
+        <div id="about-me-container" class="container">
             <div id="about-me" class="row">
-                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="header center-align"><span
+                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="header center-align col s12"><span
                         id="slashes">//</span> ABOUT MASON <span id="slashes">//</span></h2>
 
                 <div data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1000" class="row">
-                    <h5 class="center-align">
-                        My name is Mason Vickery and I am a Full-Stack Web Developer born in Austin, Texas. I love
-                        Austin and have lived here almost my whole life, except when I spent a winter in Alta, Utah to
-                        ski. I love spending time with my friends, being outdoors, and creating useful and beautiful
-                        web applications.
+                    <h5 class="center-align col s12">
+                        I am a Full-Stack Web Developer who loves creating clean and responsive UI with animations that
+                        bring applications to life.
                     </h5>
                 </div>
 
-                <br>
 
-                <div class="row">
+                <div class="col s12">
+                    <div id="hide-about-icons" class="row">
 
-                    <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" class="col s4 m4 center-align">
-                        <div class="about-icons">
-                            <img src="assets/images/lightbulb.svg" height="100" width="100">
-                            <h6>Problem Solver</h6>
+                        <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" class="col s12 m4 center-align">
+                            <div class="about-icons ">
+                                <img class="responsive-img" src="assets/images/lightbulb.svg" height="100" width="100">
+                                <h6>Problem Solver</h6>
+                            </div>
                         </div>
-                    </div>
 
-                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="col s4 m4 center-align">
-                        <div class="about-icons">
-                            <img src="assets/images/magnifying.svg" height="100" width="100">
-                            <h6>Detail Oriented</h6>
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="col s12 m4 center-align">
+                            <div class="about-icons">
+                                <img class="responsive-img" src="assets/images/magnifying.svg" height="100" width="100">
+                                <h6>Detail Oriented</h6>
+                            </div>
                         </div>
-                    </div>
 
-                    <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" class="col s4 m4 center-align">
-                        <div class="about-icons">
-                            <img src="assets/images/driven.svg" height="100" width="100">
-                            <h6>Highly Driven</h6>
+                        <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" class="col s12 m4 center-align">
+                            <div class="about-icons">
+                                <img class="responsive-img" src="assets/images/driven.svg" height="100" width="100">
+                                <h6>Highly Driven</h6>
+                            </div>
                         </div>
+
+
                     </div>
                 </div>
 
-                <br>
-                <br>
-                <br>
 
-                <!-- Resume Button -->
-                <div class="row">
-                    <div class="col-12 center-align">
-                        <a data-aos="zoom-out-up" data-aos-delay="650" data-aos-duration="1000" id="resume-button"
-                            class="waves-effect waves-light btn-large" href="assets/resume/mason-vickery-resume.pdf"
-                            target="_blank"><i class="material-icons left">mood</i>Resume</a>
+
+                <div id="resume-button" class="col s12">
+                    <div class="row">
+                        <div class="col s12 center-align">
+                            <a data-aos="zoom-out-up" data-aos-delay="650" data-aos-duration="1000" id="resume-button-color"
+                                class="waves-effect waves-light btn-large" href="assets/resume/mason-vickery-resume.pdf"
+                                target="_blank"><i class="material-icons left">mood</i>Resume</a>
+                        </div>
                     </div>
                 </div>
 
@@ -125,147 +138,121 @@
         </div>
     </div>
 
-    <!-- PROJECTS -->
-    <!-- <div class="black-pattern">
-        <div id="projects" class="section">
-            <div class="row container">
-                <h2 class="header center-align"><span class="projects-slashes">//</span> PROJECTS <span class="projects-slashes">//</span></h2>
-            </div>
+    <!-- GRADIENT BACKGROUND -->
 
-            <div class="row container">
+    <div class="bottombg">
 
-                
-                <div class="col s12 m3 ">
-                    <div class="card">
-                        <div class="card-image ">
-                            <img class="responsive-img" src="https://images.unsplash.com/photo-1527406039119-567aa5c2e702?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9eb5a0d16f36f73e92341ebe5633547c&auto=format&fit=crop&w=1350&q=80">
-                        </div>
-                        <div class="card-action center-align card-body">
-                            <p>RESTAURANT ROULETTE</p>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://wheresdylan.github.io/project_one/"
-                                target="_blank">Website</a>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/wheresdylan/project_one"
-                                target="_blank">GitHub</a>
-                        </div>
-                    </div>
+
+        <div class="project-section">
+            <div id="projects" class="section">
+                <div class="row container">
+                    <h2 class="header center-align"><span class="projects-slashes">//</span> PROJECTS <span class="projects-slashes">//</span></h2>
                 </div>
 
+                <div class="container">
 
-                
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image ">
-                            <img class="responsive-img" src="https://images.unsplash.com/photo-1501139083538-0139583c060f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=d34293717666869c9f8d26d353e1bb24&auto=format&fit=crop&w=2250&q=80">
+
+                    <div class="row card">
+
+                        <div class="col s12 m6 l4">
+                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
                         </div>
-                        <div class="card-action center-align card-body">
-                            <p>FOCUS TIMER</p>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://limitless-basin-61713.herokuapp.com/"
-                                target="_blank">Website</a>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/mtvickery1/project-2-personal"
-                                target="_blank">GitHub</a>
+                        <div class="col s12 m6 l4">
+                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
                         </div>
+                        <div class="col s12 m6 l4">
+                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                        </div>
+
+
+                        <div class="col s12 m6 l4">
+                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                        </div>
+
+                        <div class="col s12 m6 l4">
+                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <img src="assets/images/roulette.jpg" class="materialbox responsive-img card">
+                        </div>
+
                     </div>
+
+
                 </div>
-
- 
-                
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image ">
-                            <img class="responsive-img" src="https://images.unsplash.com/photo-1525422847952-7f91db09a364?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ce6622924dae3b9be067e1778a6b8707&auto=format&fit=crop&w=2265&q=80">
-                        </div>
-                        <div class="card-action center-align card-body">
-                            <p>FRIEND FINDER</p>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://shrouded-sea-72479.herokuapp.com/"
-                                target="_blank">Website</a>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/mtvickery1/Friend-Finder"
-                                target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-
-                
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image ">
-                            <img class="responsive-img" src="https://images.unsplash.com/photo-1534790566855-4cb788d389ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=29d5fd7ac0936122d9f8453830f358df&auto=format&fit=crop&w=2250&q=80">
-                        </div>
-                        <div class="card-action center-align card-body">
-                            <p>EAT DA BURGER</p>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://fast-hollows-29460.herokuapp.com/"
-                                target="_blank">Website</a>
-                            <a class="btn waves-effect white grey-text darken-text-2" href="https://github.com/mtvickery1/burger"
-                                target="_blank">GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-
             </div>
         </div>
-    </div> -->
 
-    <!-- FOOTER -->
-    <footer class="page-footer">
-        <div class="container">
-            <div class="row">
-                <div class="col s4">
-                    <h5 class="white-text">Thanks for visiting my page!</h5>
-                    <p class="grey-text text-lighten-4">Don't hesitate to contact me for projects, employment, or just
-                        talking tech!</p>
+
+
+        <footer class="page-footer footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <h5 class="white-text">Thanks for visiting my page!</h5>
+                        <p class="grey-text text-lighten-4">Don't hesitate to contact me for projects, employment, or
+                            just
+                            talking tech!</p>
+                    </div>
                 </div>
 
-                <div class="col s2">
-                    <!-- intentionally empty -->
-                </div>
+                <br>
 
-                <div class="col s6 center-align">
-                    <h5 class="white-text">Contact</h5>
-                    <p class="grey-text text-lighten-4">
+                <div class="row">
+                    <div class="center-align">
+                        <h5>Contact</h5>
+
+
+
+                        <!-- <div id="contact-icons">
+                                <span class="col s3">
+                                    <a href="https://github.com/mtvickery1" target="_blank">
+                                        <img class="icon-size" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" />
+                                </span>
+                                <span class="col s3">
+                                    <a href="https://www.linkedin.com/in/masonvickery/" target="_blank">
+                                        <img class="icon-size" src="https://image.flaticon.com/icons/svg/25/25320.svg" />
+                                </span>
+                                <span class="col s3">
+                                    <a href="mailto:mtvickery1@gmail.com" target="_blank">
+                                        <img class="icon-size" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-email-512.png" />
+                                </span>
+                                <span class="col s3">
+                                    <a href="assets/resume/mason-vickery-resume.pdf" target="_blank">
+                                        <img class="icon-size" src="https://cdn4.iconfinder.com/data/icons/web-business-useful/74/81-512.png" />
+                                </span>
+
+                            </div> -->
 
                         <div id="contact-icons">
-
-                            <!-- github -->
-                            <span class="icon-space">
-                                <a href="https://github.com/mtvickery1" target="_blank">
-                                    <img class="icon-size" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/github-512.png" />
+                            <span class="col s3">
+                                GitHub
+                            </span>
+                            <span class="col s3">
+                                Linkedin
+                            </span>
+                            <span class="col s3">
+                                Email
+                            </span>
+                            <span class="col s3">
+                                Resume
                             </span>
 
-                            <!-- linkedin -->
-                            <span class="icon-space">
-                                <a href="https://www.linkedin.com/in/masonvickery/" target="_blank">
-                                    <img class="icon-size" src="https://image.flaticon.com/icons/svg/25/25320.svg" />
-                            </span>
-
-                            <!-- email -->
-                            <span class="icon-space">
-                                <a href="mailto:mtvickery1@gmail.com" target="_blank">
-                                    <img class="icon-size" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-email-512.png" />
-                            </span>
-
-                            <!-- resume -->
-                            <span class="icon-space">
-                                <a href="assets/resume/mason-vickery-resume.pdf" target="_blank">
-                                    <img class="icon-size" src="https://cdn4.iconfinder.com/data/icons/web-business-useful/74/81-512.png" />
-                            </span>
                         </div>
 
-                    </p>
+
+                    </div>
                 </div>
-
+                <div class="container row copyright">
+                    <div class="col s12 copyright-center">
+                        <h4>© 2018 Mason Vickery</h4>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container center-align">
-                © 2018 Mason Vickery
-            </div>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
     <!-- Linking JavaScript -->
     <script src="assets/javascript/app.js"></script>
-
 </body>
 
 </html>

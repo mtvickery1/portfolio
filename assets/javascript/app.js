@@ -59,22 +59,41 @@ $(document).ready(function () {
 // SMOOTH SCROLL ON CLICK
 /////////////////////////////////////////////////////////////////////////
 var fromTop;
-$(".nav-about").click(function () {
-    fromTop = 120;
+// Main
+$(".main-about").click(function () {
+    fromTop = 245;
     $('html,body').animate({
         scrollTop: $("#about-me").offset().top - fromTop
     }, 'slow');
 });
-$(".nav-projects").click(function () {
+$(".main-projects").click(function () {
     fromTop = 70;
     $('html,body').animate({
         scrollTop: $("#projects").offset().top - fromTop
     }, 'slow');
 });
-$(".nav-contact").click(function () {
+$(".main-contact").click(function () {
     $('html,body').animate({
         scrollTop: $("#contact-icons").offset().top - fromTop
     }, 'slow');
 });
 
+// Mobile
+$(".side-about").click(function () {
+    fromTop = 122;
+    $('html,body').animate({
+        scrollTop: $("#about-me").offset().top - fromTop
+    }, 'slow');
+});
+$(".side-projects").click(function () {
+    fromTop = 70;
+    $('html,body').animate({
+        scrollTop: $("#projects").offset().top - fromTop
+    }, 'slow');
+});
+$(".side-contact").click(function () {
+    $('html,body').animate({
+        scrollTop: $("#contact-icons").offset().top - fromTop
+    }, 'slow');
+});
 
