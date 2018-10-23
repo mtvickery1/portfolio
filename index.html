@@ -17,7 +17,8 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
 
     <!-- ==============================================
 	CSS
@@ -100,10 +101,10 @@
     <div class="trees">
         <div id="about-me-container" class="container">
             <div id="about-me" class="row">
-                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" class="header center-align col s12"><span
+                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="header center-align col s12"><span
                         id="slashes">//</span> ABOUT MASON <span id="slashes">//</span></h2>
 
-                <div data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1000" class="row">
+                <div data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true" class="row">
                     <h5 class="center-align col s12">
                         I am a Full-Stack Web Developer who loves creating clean and responsive UI with animations that
                         bring applications to life.
@@ -114,21 +115,24 @@
                 <div class="col s12">
                     <div id="hide-about-icons" class="row">
 
-                        <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" class="col s12 m4 center-align">
+                        <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
+                            class="col s12 m4 center-align">
                             <div class="about-icons ">
                                 <img class="responsive-img" src="assets/images/lightbulb.svg" height="100" width="100">
                                 <h6>Problem Solver</h6>
                             </div>
                         </div>
 
-                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" class="col s12 m4 center-align">
+                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
+                            class="col s12 m4 center-align">
                             <div class="about-icons">
                                 <img class="responsive-img" src="assets/images/magnifying.svg" height="100" width="100">
                                 <h6>Detail Oriented</h6>
                             </div>
                         </div>
 
-                        <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" class="col s12 m4 center-align">
+                        <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
+                            class="col s12 m4 center-align">
                             <div class="about-icons">
                                 <img class="responsive-img" src="assets/images/driven.svg" height="100" width="100">
                                 <h6>Highly Driven</h6>
@@ -144,8 +148,8 @@
                 <div id="resume-button" class="col s12">
                     <div class="row">
                         <div class="col s12 center-align">
-                            <a data-aos="zoom-out-up" data-aos-delay="650" data-aos-duration="1000" id="resume-button-color"
-                                class="waves-effect waves-light btn-large" href="assets/resume/mason-vickery-resume.pdf"
+                            <a data-aos="zoom-out-up" data-aos-delay="650" data-aos-duration="1000" data-aos-once="true"
+                                id="resume-button-color" class="waves-effect waves-light btn-large" href="assets/resume/mason-vickery-resume.pdf"
                                 target="_blank"><i class="material-icons left">mood</i>Resume</a>
                         </div>
                     </div>
@@ -171,128 +175,141 @@
 
                     <div class="row">
 
-                        <div class="col s12 right-align">
-                            <span class="header center-align">
+                        <!-- FILTER SELECTORS -->
+
+
+
+
+
+
+                        <!-- FILTER SELECTORS -->
+                        <div class="col s12 right-align button-group filters-button-group">
+                            <span class="header center-align button is-checked" data-filter="*">
                                 ALL
                                 <span class="projects-slashes">
                                     |
                                 </span>
                             </span>
-                            <span class="header center-align">
+                            <span class="header center-align button" data-filter=".front-end">
                                 FRONT END
                                 <span class="projects-slashes">
                                     |
                                 </span>
                             </span>
-                            <span class="header center-align">
+                            <span class="header center-align button" data-filter=".full-stack">
                                 FULL STACK
                             </span>
                         </div>
 
-                        <!-- PROJECT -->
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/images/roulette.jpg">
-                                </div>
-                                <!-- <div class="card-content">
-                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-                                            <p><a href="#">This is a link</a></p>
-                                        </div> -->
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
-                                </div>
-                            </div>
-                        </div>
+<br><br><br>
+
 
                         <!-- PROJECT -->
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/images/roulette.jpg">
-                                </div>
-                                <!-- <div class="card-content">
+                        <div class="grid">
+                            <div class="col s12 m6 l4 element-item front-end" data-category="front-end">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="assets/images/roulette.jpg">
+                                    </div>
+                                    <!-- <div class="card-content">
                                             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                                             <p><a href="#">This is a link</a></p>
                                         </div> -->
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked on.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- PROJECT -->
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/images/roulette.jpg">
-                                </div>
-                                <!-- <div class="card-content">
+                            <!-- PROJECT -->
+                            <div class="col s12 m6 l4 element-item front-end" data-category="front-end">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="assets/images/roulette.jpg">
+                                    </div>
+                                    <!-- <div class="card-content">
                                             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                                             <p><a href="#">This is a link</a></p>
                                         </div> -->
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked on.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- PROJECT -->
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/images/roulette.jpg">
-                                </div>
-                                <!-- <div class="card-content">
+                            <!-- PROJECT -->
+                            <div class="col s12 m6 l4 element-item front-end" data-category="front-end">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="assets/images/roulette.jpg">
+                                    </div>
+                                    <!-- <div class="card-content">
                                             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                                             <p><a href="#">This is a link</a></p>
                                         </div> -->
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked on.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- PROJECT -->
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/images/roulette.jpg">
-                                </div>
-                                <!-- <div class="card-content">
+                            <!-- PROJECT -->
+                            <div class="col s12 m6 l4 element-item front-end" data-category="front-end">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="assets/images/roulette.jpg">
+                                    </div>
+                                    <!-- <div class="card-content">
                                             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                                             <p><a href="#">This is a link</a></p>
                                         </div> -->
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked on.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <!-- PROJECT -->
-                        <div class="col s12 m6 l4">
-                            <div class="card">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator" src="assets/images/roulette.jpg">
-                                </div>
-                                <!-- <div class="card-content">
+                            <!-- PROJECT -->
+                            <div class="col s12 m6 l4 element-item full-stack" data-category="full-stack">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="assets/images/roulette.jpg">
+                                    </div>
+                                    <!-- <div class="card-content">
                                             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
                                             <p><a href="#">This is a link</a></p>
                                         </div> -->
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-                                    <p>Here is some more information about this product that is only revealed once
-                                        clicked on.</p>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked on.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- PROJECT -->
+                            <div class="col s12 m6 l4 element-item full-stack" data-category="full-stack">
+                                <div class="card">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator" src="assets/images/roulette.jpg">
+                                    </div>
+                                    <!-- <div class="card-content">
+                                            <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+                                            <p><a href="#">This is a link</a></p>
+                                        </div> -->
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+                                        <p>Here is some more information about this product that is only revealed once
+                                            clicked on.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -381,7 +398,10 @@
     =============================================== -->
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
+    <!-- Isotope.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI="
+        crossorigin="anonymous"></script>
     <!-- Linking JavaScript -->
     <script src="assets/javascript/app.js"></script>
 </body>

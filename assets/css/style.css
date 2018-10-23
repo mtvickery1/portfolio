@@ -5,7 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    z-index: 0;
+    /* z-index: 2; */
     /* border: 1px solid red; */
 }
 
@@ -29,8 +29,8 @@ nav {
     position: fixed;
     background: rgba(255, 255, 255, 0.8) !important;
     padding: 0 20px;
-    font-family: monospace;
-    z-index: 1;
+    /* z-index: 3; */
+    /* box-shadow: none; */
 }
 
 /* text color */
@@ -65,6 +65,7 @@ nav div a {
     width: 100%;
     display: flex;
     justify-content: center;
+    /* z-index: 0; */
 }
 
 #hello-container {
@@ -80,6 +81,7 @@ nav div a {
     left: 50%;
     transform: translate(-50%, -50%);
     /* opacity: 1; */
+    /* z-index: 1; */
 }
 
 #hello-content {
@@ -320,10 +322,3 @@ div.card-reveal span.card-title{
         padding-top: 0;
     }
 }
-
-/* Didnt work */
-/* @media screen and (max-width: 480px) {
-    .name {
-        text-align: center !important;
-    }
-} */
