@@ -1,4 +1,12 @@
-// AOS
+//======================================================================
+// Initialize
+//======================================================================
+// Initialize Sidenav
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+});
+
+// Initialize AOS
 AOS.init();
 
 // Initialize Isotope
@@ -6,19 +14,6 @@ var $grid = $('.grid').isotope({
     itemSelector: '.element-item',
     layoutMode: 'fitRows'
 });
-
-
-//======================================================================
-// PARALAX
-//======================================================================
-$(document).ready(function () {
-    $('.sidenav').sidenav();
-});
-
-// $('.carousel.carousel-slider').carousel({
-//     fullWidth: true,
-//     indicators: true
-// });
 
 //======================================================================
 // CHANGE NAV COLOR
@@ -59,69 +54,96 @@ $(document).ready(function () {
         //     $(".nav-effect").removeClass("highlight");
         // }
     });
+
     // Nav click highlight feature
     $('.nav-effect a').click(function () {
         $(this).closest("li").addClass('highlight').siblings().removeClass('highlight');
         return (false);   // no default behavior from clicking on the link
     });
 
-
 });
+
+//======================================================================
+// RESPONSIVE ABOUT BACKGROUND
+//======================================================================
+// Nav height
+// vpw = $(window).width();
+var vph;
+var nvh;
+
+// Set height on load
+$(document).ready(function () {
+    vph = $(window).height();
+    nvh = $('#navbar').height();
+    $('.trees').css({ 'height': vph - nvh + 'px' });
+    console.log('vph', vph);
+    console.log('nvh', nvh);
+});
+
+// Set height on resize
+$(window).resize(function() {
+    vph = $(window).height();
+    nvh = $('#navbar').height();
+    $('.trees').css({ 'height': vph - nvh + 'px' });
+    console.log('vph', vph);
+    console.log('nvh', nvh);
+});
+
 
 //======================================================================
 // SMOOTH SCROLL ON CLICK
 //======================================================================
-var fromTop;
+var fromTop = 0;
 // Main
 $(".main-about").click(function () {
-    fromTop = 245;
+    fromTop = 0;
     $('html,body').animate({
-        scrollTop: $("#about-me").offset().top - fromTop
+        scrollTop: $(".trees").offset().top - fromTop - nvh
     }, 'slow');
 });
 $(".main-projects").click(function () {
-    fromTop = 70;
+    fromTop = 10;
     $('html,body').animate({
-        scrollTop: $("#projects").offset().top - fromTop
+        scrollTop: $("#projects").offset().top - fromTop - nvh
     }, 'slow');
 });
 $(".main-contact").click(function () {
     $('html,body').animate({
-        scrollTop: $("#contact-icons").offset().top - fromTop
+        scrollTop: $("footer").offset().top - fromTop - nvh
     }, 'slow');
 });
 
 // Mobile
 $(".side-about").click(function () {
-    fromTop = 122;
+    fromTop = 0;
     $('html,body').animate({
-        scrollTop: $("#about-me").offset().top - fromTop
+        scrollTop: $(".trees").offset().top - fromTop - nvh
     }, 'slow');
 });
 $(".side-projects").click(function () {
-    fromTop = 70;
+    fromTop = 10;
     $('html,body').animate({
-        scrollTop: $("#projects").offset().top - fromTop
+        scrollTop: $("#projects").offset().top - fromTop - nvh
     }, 'slow');
 });
 $(".side-contact").click(function () {
     $('html,body').animate({
-        scrollTop: $("#contact-icons").offset().top - fromTop
+        scrollTop: $("footer").offset().top - fromTop - nvh
     }, 'slow');
 });
 
 //======================================================================
 // HEADER
 //======================================================================
-// Fadeaway
+// Fadeaway hello-container
 $(window).scroll(function () {
     $("#hello-container").css("opacity", 1 - $(window).scrollTop() / 250);
 });
 
-// Hiding once scrolled
+// Hiding hello-container once scrolled
 $(document).ready(function () {
 
-    // Hiding div on load
+    // Hiding on load
     if ($(window).scrollTop() > 285) {
         $("#hello-container").css("display", "none");
     } else {
@@ -130,12 +152,9 @@ $(document).ready(function () {
 
     $(window).scroll(function () {
 
-        console.log('scrollTop:', $(window).scrollTop());
-
         // Hiding div on scroll
         if ($(window).scrollTop() > 285) {
             $("#hello-container").css("display", "none");
-            console.log('hidden');
 
         } else {
             $("#hello-container").css("display", "flex");
@@ -158,11 +177,9 @@ $(function () {
     );
 });
 
-
-
-
-
-
+//======================================================================
+// ISOTOPE - Layout Plugin
+//======================================================================
 // bind filter button click
 $('.filters-button-group').on('click', 'span', function () {
     var filterValue = $(this).attr('data-filter');

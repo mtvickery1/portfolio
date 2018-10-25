@@ -114,7 +114,7 @@ nav div a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 94%;
+    /* height: 93.5%; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -124,6 +124,7 @@ nav div a {
     position: relative;
 }
 
+/* Vertical Center */
 #about-me-container {
     display: flex;
     justify-content: center;
@@ -131,7 +132,7 @@ nav div a {
 }
 
 #about-me {
-    /* height: 85%; */
+    max-height: 85%;
     background: rgb(231, 245, 249, .8);
     margin: 50px 0 50px 0;
     border-style: solid;
@@ -313,7 +314,7 @@ div.card-reveal span.card-title{
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 93%;
+        /* height: 93.5%; */
         width: 100%;
         display: flex;
         justify-content: center;
