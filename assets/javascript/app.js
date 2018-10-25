@@ -1,13 +1,19 @@
+// AOS
 AOS.init();
+
+// Initialize Isotope
+var $grid = $('.grid').isotope({
+    itemSelector: '.element-item',
+    layoutMode: 'fitRows'
+});
 
 
 //======================================================================
 // PARALAX
 //======================================================================
-// $(document).ready(function () {
-//     $(".parallax").parallax();
-//     $('.sidenav').sidenav();
-// });
+$(document).ready(function () {
+    $('.sidenav').sidenav();
+});
 
 // $('.carousel.carousel-slider').carousel({
 //     fullWidth: true,
@@ -18,6 +24,13 @@ AOS.init();
 // CHANGE NAV COLOR
 //======================================================================
 $(document).ready(function () {
+
+    // Initial nav color on load
+    if ($(window).scrollTop() > 500) {
+        $("nav").addClass("scrolled");
+        $("nav div ul li a" && "nav div a").addClass("scrolled-font");
+    }
+
     $(window).scroll(function () {
         // Nav background color change
         if ($(window).scrollTop() > 500) {
@@ -105,6 +118,31 @@ $(window).scroll(function () {
     $("#hello-container").css("opacity", 1 - $(window).scrollTop() / 250);
 });
 
+// Hiding once scrolled
+$(document).ready(function () {
+
+    // Hiding div on load
+    if ($(window).scrollTop() > 285) {
+        $("#hello-container").css("display", "none");
+    } else {
+        $("#hello-container").css("display", "flex");
+    }
+
+    $(window).scroll(function () {
+
+        console.log('scrollTop:', $(window).scrollTop());
+
+        // Hiding div on scroll
+        if ($(window).scrollTop() > 285) {
+            $("#hello-container").css("display", "none");
+            console.log('hidden');
+
+        } else {
+            $("#hello-container").css("display", "flex");
+        }
+    });
+});
+
 //======================================================================
 // PROJECTS
 //======================================================================
@@ -124,11 +162,6 @@ $(function () {
 
 
 
-// Initialize Isotope
-var $grid = $('.grid').isotope({
-    itemSelector: '.element-item',
-    layoutMode: 'fitRows'
-});
 
 // bind filter button click
 $('.filters-button-group').on('click', 'span', function () {
