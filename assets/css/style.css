@@ -184,15 +184,16 @@ nav div a {
 /*======================================================================*/
 .bottombg {
     background-image: url("../images/dark.png");
-    min-height: 150%;
+    /* min-height: 150%; */
     width: 100%;
-    position: relative;
+    /* position: relative; */
 
 }
 
 .project-section {
-    min-height: 100%;
+    /* min-height: 100%; */
     width: 100%;
+    /* float: left; */
 }
 
 #projects {
@@ -234,20 +235,30 @@ div.card-reveal span.card-title{
     background-color: rgba(0,0,0,0.7) !important;
 }
 
+/* Isotope */
+/* .grid {
+    width: 100% !important;
+}
+.element-item {
+    width: 100% !important;
+    margin: 0 auto !important;
+} */
+
 /*======================================================================*/
 /* CONTACT */
 /*======================================================================*/
 .footer {
     width: 100%;
-    min-height: 40%;
+    /* min-height: 40%; */
     padding-top: 160px;
     background-color: rgb(99, 194, 222, .5) !important;
     border-top-style: solid;
     border-width: 10px 0 0 0;
     border-color: rgb(99, 194, 222);
     border-radius: 50% 50% 0 0;
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    /* clear: left; */
     
 }
 
@@ -332,7 +343,7 @@ div.card-reveal span.card-title{
 }
 
 /* Format Footer */
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     .bottombg {
         min-height: 160%;
     }
@@ -350,4 +361,4 @@ div.card-reveal span.card-title{
         min-height: 10%;
     }
     
-}
+} */
