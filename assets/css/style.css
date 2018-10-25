@@ -237,12 +237,14 @@ div.card-reveal span.card-title{
 
 /* Isotope */
 /* .grid {
-    width: 100% !important;
-}
-.element-item {
-    width: 100% !important;
-    margin: 0 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
 } */
+.element-item {
+    width: 33.33% !important;
+}
+/* .grid-sizer,
+.element-item { width: 33.33%; } */
 
 /*======================================================================*/
 /* CONTACT */
@@ -320,6 +322,27 @@ div.card-reveal span.card-title{
     }
 
 }
+
+/*==================*/
+/* MATERIALIZE */
+/*==================*/
+/* LARGE */
+@media screen and (max-width: 1200px) {
+    
+}
+/* MEDIUM */
+@media screen and (max-width: 992px) {
+    .element-item {
+        width: 50% !important;
+    }
+}
+/* SMALL */
+@media screen and (max-width: 600px) {
+    .element-item {
+        width: 100% !important;
+    }
+}
+
 
 /* HIDE ABOUT ICONS */
 @media screen and (max-width: 748px) {
