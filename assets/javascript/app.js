@@ -32,7 +32,7 @@ $(document).ready(function () {
     console.log('triggerPosition', triggerPosition);
 
     //======================================================================
-    // SET NAV ON LOAD
+    // SET NAV COLOR ON LOAD
     //======================================================================
     if (scrollPosition >= triggerPosition) {
         console.log('landHeight', landHeight);
@@ -44,7 +44,7 @@ $(document).ready(function () {
     }
 
     //======================================================================
-    // SET NAV ON SCROLL
+    // SET NAV COLOR ON SCROLL
     //======================================================================
     $(window).scroll(function () {
         nvh = $('#navbar').height();

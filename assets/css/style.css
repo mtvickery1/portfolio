@@ -5,17 +5,37 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* z-index: 2; */
     /* border: 1px solid red; */
 }
 
 body, html{
     height: 100vh;
     width: 100%;
+    position: relative;
     font-family: monospace;
+    color: black;
+}
+
+/* FONTS */
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-family: 'Indie Flower', cursive; */
-    color: black;
+
+/* FONT SIZE */
+.big-text {
+    font-size: 5.5vw;
+}
+
+.small-text {
+    font-size: 1.5vw;
+}
+
+/* SPACING */
+.padding {
+    padding: 10px;
+}
+
+.no-wrap {
+    white-space: nowrap;
 }
 
 /*======================================================================*/
@@ -29,24 +49,20 @@ nav {
     /* box-shadow: none; */
 }
 
-/* text color */
+/* Text Color */
 nav div ul li a,
 nav div a {
     color: black !important;
 }
 
-/* hover color */
+/* Hover Color */
 .nav-effect:hover {
     background: rgb(99, 194, 222);
 }
 
-/* clicked color */
+/* Clicked Color */
 .highlight {
     background: rgb(99, 194, 222);
-}
-
-.name {
-    font-size: 24px;
 }
 
 /*======================================================================*/
@@ -57,15 +73,15 @@ nav div a {
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
+    min-height: 100%; 
     width: 100%;
     display: flex;
-    justify-content: center;
-    /* z-index: 0; */
+    /* justify-content: center; */
+    background-position: center;
 }
 
 #hello-container {
-    display: flex;
+    /* display: flex; */
     align-items: center; 
     text-align: center;
     color: rgb(231, 245, 249);
@@ -73,33 +89,14 @@ nav div a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    line-height: 1;
 }
-
-#hello-content {
-    /* background: rgb(99, 194, 222, .5); */
-    /* border-radius: 50%; */
-    padding: 40px;
-    /* border-style: solid;
-    border-width: 5px;
-    border-color: rgb(231, 245, 249); */
-}
-
-.big-text {
-    font-size: 80px;
-}
-
-.small-text {
-    font-size: 20px;
-}
-
-
-
 
 /*======================================================================*/
 /* SCROLLING CSS */
 /*======================================================================*/
 .scrolled {
-    background: rgb(0, 0, 0) !important;
+    background: rgb(34, 34, 34) !important;
     /* border-style: solid;
     border-width: 0 0 2px 0;
     border-color: rgb(99, 194, 222); */
@@ -119,11 +116,12 @@ nav div a {
     /* height: 93.5%; */
     width: 100%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    background-position: center;
     border-style: solid;
     border-width: 10px 0 10px 0;
     border-color: rgb(99, 194, 222);
-    position: relative;
+    /* position: relative; */
 }
 
 /* Vertical Center */
@@ -294,7 +292,7 @@ div.card-reveal span.card-title{
 /*======================================================================*/
 /* Resizes Landing Background */
 @media screen and (max-width: 1432px) {
-    .gorge {
+    /* .gorge {
         background-image: url("../images/night.jpg");
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -321,7 +319,7 @@ div.card-reveal span.card-title{
         border-style: solid;
         border-width: 10px 0 10px 0;
         border-color: rgb(99, 194, 222);
-    }
+    } */
 
 }
 
@@ -387,3 +385,26 @@ div.card-reveal span.card-title{
     }
     
 } */
+
+/*==================*/
+/* Scrollbar */
+/*==================*/
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(34, 34, 34);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(231, 245, 249, .8); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(99, 194, 222);
+}

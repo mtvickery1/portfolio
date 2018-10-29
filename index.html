@@ -21,19 +21,23 @@
         crossorigin="anonymous">
 
     <!-- ==============================================
-	CSS/JQuery
+	Scripts
     =============================================== -->
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- ==============================================
+	CSS
+    =============================================== -->
     <!-- Materialize -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <!-- Materialize Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Linking Stylesheet -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -45,11 +49,21 @@
 	TOP NAVBAR
     =============================================== -->
     <nav id="navbar">
+
+        <!-- Wrapper -->
         <div class="nav-wrapper">
+
+            <!-- Mobile Menu Icon -->
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i class="material-icons">menu</i>
             </a>
+
+            <!-- Logo -->
+            <a href="#" class="brand-logo">Mason Vickery</a>
+
+            <!-- Nav Buttons -->
             <ul class="right hide-on-med-and-down">
+
                 <li class="nav-effect">
                     <a class="nav-about main-about">About Me</a>
                 </li>
@@ -59,14 +73,18 @@
                 <li class="nav-effect">
                     <a class="nav-contact main-contact">Contact</a>
                 </li>
+
             </ul>
+
         </div>
+
     </nav>
 
     <!-- ==============================================
 	SIDE NAVBAR
     =============================================== -->
     <ul class="sidenav grey lighten-2" id="mobile-demo">
+
         <li class="nav-effect">
             <a class="nav-about side-about">About Me</a>
         </li>
@@ -76,21 +94,42 @@
         <li class="nav-effect">
             <a class="nav-contact side-contact">Contact</a>
         </li>
+
     </ul>
 
     <!-- ==============================================
 	LANDING PAGE
     =============================================== -->
+    <!-- BG -->
     <div class="gorge">
+
+        <!-- Container -->
         <div id="hello-container" class="container">
-            <div id="hello-content" class="row" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
-                <div class="col s12 m12 l12 xl12">
-                    <div>
-                        <p class="small-text">Hi, I'm</p>
-                        <p class="big-text">MASON VICKERY</p>
-                        <p class="small-text">I'm a web developer.</p>
-                    </div>
+
+            <!-- Row -->
+            <div class="row" data-aos="zoom-in" data-aos-delay="500" data-aos-duration="2000">
+
+                <!-- Col -->
+                <div class="col s12 small-text">
+                    <p>
+                        Hi, I'm
+                    </p>
                 </div>
+
+                <!-- Col -->
+                <div class="col s12">
+                    <p class="big-text padding no-wrap ">
+                        MASON VICKERY
+                    </p>
+                </div>
+
+                <!-- Col -->
+                <div class="col s12 small-text">
+                    <p>
+                        I'm a web developer.
+                    </p>
+                </div>
+
             </div>
 
         </div>
@@ -99,58 +138,77 @@
     <!-- ==============================================
 	ABOUT
     =============================================== -->
+    <!-- BG -->
     <div class="trees">
-        <div id="about-me-container" class="container">
-            <div id="about-me" class="row">
-                <h2 data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true" class="header center-align col s12"><span
-                        id="slashes">//</span> ABOUT MASON <span id="slashes">//</span></h2>
 
-                <div data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true" class="row">
+        <!-- Container -->
+        <div id="about-me-container" class="container">
+
+            <!-- Row -->
+            <div id="about-me" class="row">
+
+                <!-- Col -->
+                <h2 class="header center-align col s12" data-aos="fade-down" data-aos-delay="200" data-aos-duration="1000"
+                    data-aos-once="true">
+
+                    <span id="slashes">//</span> ABOUT MASON <span id="slashes">//</span>
+
+                </h2>
+
+                <!-- Row -->
+                <div class="row" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1000" data-aos-once="true">
+
+                    <!-- Col -->
                     <h5 class="center-align col s12">
-                        I am a Full-Stack Web Developer who loves creating clean and responsive UI with animations that
+                        I am a Full-Stack Web Developer who loves creating clean and responsive UI with animations
+                        that
                         bring applications to life.
                     </h5>
+
                 </div>
 
-                <div class="col s12">
-                    <div id="hide-about-icons" class="row">
+                <!-- Row -->
+                <div id="hide-about-icons" class="row">
 
-                        <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
-                            class="col s12 m4 center-align">
-                            <div class="about-icons ">
-                                <img class="responsive-img" src="assets/images/lightbulb.svg" height="100" width="100">
-                                <h6>Problem Solver</h6>
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
-                            class="col s12 m4 center-align">
-                            <div class="about-icons">
-                                <img class="responsive-img" src="assets/images/magnifying.svg" height="100" width="100">
-                                <h6>Detail Oriented</h6>
-                            </div>
-                        </div>
-
-                        <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
-                            class="col s12 m4 center-align">
-                            <div class="about-icons">
-                                <img class="responsive-img" src="assets/images/driven.svg" height="100" width="100">
-                                <h6>Highly Driven</h6>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div id="resume-button" class="col s12">
-                    <div class="row">
-                        <div class="col s12 center-align">
-                            <a data-aos="zoom-out-up" data-aos-delay="650" data-aos-duration="1000" data-aos-once="true"
-                                id="resume-button-color" class="waves-effect waves-light btn-large" href="assets/resume/mason-vickery-resume.pdf"
-                                target="_blank"><i class="material-icons left">mood</i>Resume</a>
+                    <!-- Col -->
+                    <div data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
+                        class="col s4 center-align">
+                        <div class="about-icons ">
+                            <img class="responsive-img" src="assets/images/lightbulb.svg" height="100" width="100">
+                            <h6>Problem Solver</h6>
                         </div>
                     </div>
+
+                    <!-- Col -->
+                    <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true" class="col s4 center-align">
+                        <div class="about-icons">
+                            <img class="responsive-img" src="assets/images/magnifying.svg" height="100" width="100">
+                            <h6>Detail Oriented</h6>
+                        </div>
+                    </div>
+
+                    <!-- Col -->
+                    <div data-aos="fade-up-left" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true"
+                        class="col s4 center-align">
+                        <div class="about-icons">
+                            <img class="responsive-img" src="assets/images/driven.svg" height="100" width="100">
+                            <h6>Highly Driven</h6>
+                        </div>
+                    </div>
+
                 </div>
+
+                <!-- Row -->
+                <div id="resume-button" class="row">
+
+                    <div class="col s12 center-align">
+                        <a data-aos="zoom-out-up" data-aos-delay="650" data-aos-duration="1000" data-aos-once="true" id="resume-button-color"
+                            class="waves-effect waves-light btn-large" href="assets/resume/mason-vickery-resume.pdf"
+                            target="_blank"><i class="material-icons left">mood</i>Resume</a>
+                    </div>
+
+                </div>
+
 
             </div>
         </div>
@@ -164,7 +222,8 @@
 
         <div class="project-section">
             <div id="projects" class="section">
-                <div class="row container">
+                <div class="row container" data-aos="zoom-in" data-aos-delay="350" data-aos-duration="1000"
+                    data-aos-once="true">
                     <h2 class="header center-align"><span class="projects-slashes">//</span> PROJECTS <span class="projects-slashes">//</span></h2>
                 </div>
 
@@ -172,7 +231,8 @@
                     <div class="row">
 
                         <!-- FILTER SELECTORS -->
-                        <div class="col s12 right-align button-group filters-button-group">
+                        <div class="col s12 right-align button-group filters-button-group" data-aos="zoom-in-right"
+                            data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
                             <span class="center-align button is-checked" data-filter="*">
                                 ALL
                                 <span class="projects-slashes">
@@ -193,7 +253,8 @@
                     </div>
 
                     <!-- ISOTOPE GRID -->
-                    <div class="row">
+                    <div class="row" data-aos="zoom-in" data-aos-delay="650" data-aos-duration="1000"
+                    data-aos-once="true">
 
                         <!-- PROJECT -->
                         <div class="grid">
@@ -251,7 +312,7 @@
                             </div>
 
                             <!-- PROJECT -->
-                            <div class="col s12 m6 l4 element-item front-end" data-category="front-end" data-aos="fade-up-right" data-aos-delay="500" data-aos-duration="1000" data-aos-once="true">
+                            <div class="col s12 m6 l4 element-item front-end" data-category="front-end">
                                 <div class="card">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator" src="assets/images/roulette.jpg">
@@ -318,7 +379,8 @@
                 <div class="row">
                     <div class="col s12">
                         <h5 class="white-text">Thanks for visiting my page!</h5>
-                        <p class="grey-text text-lighten-4">Don't hesitate to contact me for projects, employment, or just talking tech!</p>
+                        <p class="grey-text text-lighten-4">Don't hesitate to contact me for projects, employment, or
+                            just talking tech!</p>
                     </div>
                 </div>
 
