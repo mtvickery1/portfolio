@@ -27,14 +27,14 @@ $(document).ready(function () {
     var nvh = $('#navbar').height();
     var scrollPosition = $(window).scrollTop();
     var landHeight = $('.gorge').height();
-    var triggerPosition = landHeight - nvh;
+    var aboutTrigger = landHeight - nvh;
 
-    console.log('triggerPosition', triggerPosition);
+    console.log('aboutTrigger', aboutTrigger);
 
     //======================================================================
     // SET NAV COLOR ON LOAD
     //======================================================================
-    if (scrollPosition >= triggerPosition) {
+    if (scrollPosition >= aboutTrigger) {
         console.log('landHeight', landHeight);
         console.log('scrollPosition', scrollPosition);
 
@@ -50,26 +50,84 @@ $(document).ready(function () {
         nvh = $('#navbar').height();
         scrollPosition = $(window).scrollTop();
         landHeight = $('.gorge').height();
-        triggerPosition = landHeight - nvh;
+        var aboutHeight = $('.trees').height();
+        // var projectsHeight = $('.project-section').height();
+        aboutTrigger = landHeight - nvh;
+        var projectsTrigger = aboutTrigger + aboutHeight + 10;
+        var contactTrigger = $(document).height() - $(window).height();
+
         console.log('landHeight', landHeight);
         console.log('scrollPosition', scrollPosition);
         console.log('nvh', nvh);
-        console.log('triggerPosition', triggerPosition);
+        console.log('aboutTrigger', aboutTrigger);
+        console.log('projectsTrigger', projectsTrigger);
+        console.log('contactTrigger', contactTrigger);
+
         // Nav background color change
-        if (scrollPosition >= triggerPosition) {
+        if (scrollPosition >= aboutTrigger) {
             $("nav").addClass("scrolled");
             $("nav div ul li a" && "nav div a").addClass("scrolled-font");
         } else {
             $("nav").removeClass("scrolled");
             $("nav div ul li a" && "nav div a").removeClass("scrolled-font");
         }
+
+        //======================================================================
+        // CUSTOM SCROLLSPY ON SCROLL
+        //======================================================================
+        // ABOUT
+        if (scrollPosition >= aboutTrigger && scrollPosition < projectsTrigger) {
+            $(".nav-about").addClass('highlight').siblings().removeClass('highlight');
+        } else {
+            $(".nav-about").removeClass('highlight');
+        }
+
+        // PROJECTS
+        if (scrollPosition >= projectsTrigger && scrollPosition < contactTrigger) {
+            $(".nav-projects").addClass('highlight').siblings().removeClass('highlight');
+        } else {
+            $(".nav-projects").removeClass('highlight');
+        }
+
+        // CONTACT
+        if (scrollPosition >= contactTrigger) {
+            $(".nav-contact").addClass('highlight').siblings().removeClass('highlight');
+        } else {
+            $(".nav-contact").removeClass('highlight');
+        }
     });
 
-    // Nav click highlight feature
-    $('.nav-effect a').click(function () {
-        $(this).closest("li").addClass('highlight').siblings().removeClass('highlight');
-        return (false);   // no default behavior from clicking on the link
-    });
+    //======================================================================
+    // CUSTOM SCROLLSPY ON LOAD
+    //======================================================================
+    nvh = $('#navbar').height();
+    scrollPosition = $(window).scrollTop();
+    landHeight = $('.gorge').height();
+    var aboutHeight = $('.trees').height();
+    // var projectsHeight = $('.project-section').height();
+    aboutTrigger = landHeight - nvh;
+    var projectsTrigger = aboutTrigger + aboutHeight + 10;
+    var contactTrigger = $(document).height() - $(window).height();
+    // ABOUT
+    if (scrollPosition >= aboutTrigger && scrollPosition < projectsTrigger) {
+        $(".nav-about").addClass('highlight').siblings().removeClass('highlight');
+    } else {
+        $(".nav-about").removeClass('highlight');
+    }
+
+    // PROJECTS
+    if (scrollPosition >= projectsTrigger && scrollPosition < contactTrigger) {
+        $(".nav-projects").addClass('highlight').siblings().removeClass('highlight');
+    } else {
+        $(".nav-projects").removeClass('highlight');
+    }
+
+    // CONTACT
+    if (scrollPosition >= contactTrigger) {
+        $(".nav-contact").addClass('highlight').siblings().removeClass('highlight');
+    } else {
+        $(".nav-contact").removeClass('highlight');
+    }
 
     // Set height on load
     vph = $(window).height();
@@ -88,6 +146,13 @@ $(document).ready(function () {
         console.log('nvh', nvh);
     });
 
+    //======================================================================
+    // HIGHLIGHT SECTION ON CLICK
+    //======================================================================
+    $('.nav-effect a').click(function () {
+        $(this).closest("a").addClass('highlight').siblings().removeClass('highlight');
+        return (false);   // no default behavior from clicking on the link
+    });
 
     //======================================================================
     // SMOOTH SCROLL ON CLICK
