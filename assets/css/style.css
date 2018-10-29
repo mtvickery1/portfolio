@@ -271,7 +271,7 @@ div.card-reveal span.card-title{
 .footer {
     width: 100%;
     /* min-height: 40%; */
-    padding-top: 160px;
+    /* padding-top: 160px; */
     background-color: rgb(99, 194, 222, .5) !important;
     border-top-style: solid;
     border-width: 10px 0 0 0;
@@ -292,12 +292,11 @@ div.card-reveal span.card-title{
 }
 
 #contact {
-    color: #1F1F1F;
+    /* padding-bottom: 20px; */
 }
 
-.icon-size {
-    width: 100px;
-    height: 100px;
+a {
+    color: rgb(248, 179, 2); 
 }
 
 /* .icon-space {
@@ -361,6 +360,17 @@ div.card-reveal span.card-title{
     .filters-button-group {
         font-size: 2.5vw;
     }
+    .big-text {
+        font-size: 10vw;
+    }
+    
+    .small-text {
+        font-size: 2.5vw;
+    }
+    .brand-logo {
+        font-size: 7vw !important;
+    }
+    
 }
 
 
