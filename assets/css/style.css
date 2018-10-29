@@ -345,6 +345,9 @@ div.card-reveal span.card-title{
     .element-item {
         width: 100% !important;
     }
+    .filters-button-group {
+        font-size: 2.5vw;
+    }
 }
 
 
