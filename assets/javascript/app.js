@@ -92,6 +92,8 @@ $(document).ready(function () {
         // CONTACT
         if (scrollPosition >= contactTrigger) {
             $(".nav-contact").addClass('highlight').siblings().removeClass('highlight');
+            $(".nav-about").removeClass('highlight');
+            $(".nav-projects").removeClass('highlight');
         } else {
             $(".nav-contact").removeClass('highlight');
         }
@@ -125,6 +127,8 @@ $(document).ready(function () {
     // CONTACT
     if (scrollPosition >= contactTrigger) {
         $(".nav-contact").addClass('highlight').siblings().removeClass('highlight');
+        $(".nav-about").removeClass('highlight');
+        $(".nav-projects").removeClass('highlight');
     } else {
         $(".nav-contact").removeClass('highlight');
     }
