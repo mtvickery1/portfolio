@@ -213,10 +213,10 @@ nav div a {
 
 }
 
-.card-body {
+/* .card-body {
     background: #E7F5F9 !important;
     color: black;
-}
+} */
 
 .card {
     border-style: solid;
@@ -235,6 +235,10 @@ div.card-reveal span.card-title{
 
 .hover {
     background-color: rgba(0,0,0,0.7) !important;
+}
+
+.project-info {
+    text-align: center;
 }
 
 /* Isotope */
