@@ -268,7 +268,7 @@ div.card-reveal span.card-title{
 /*======================================================================*/
 /* CONTACT */
 /*======================================================================*/
-.footer {
+.page-footer {
     width: 100%;
     /* min-height: 40%; */
     /* padding-top: 160px; */
@@ -280,7 +280,6 @@ div.card-reveal span.card-title{
     /* position: absolute;
     bottom: 0; */
     /* clear: left; */
-    
 }
 
 .copyright {
