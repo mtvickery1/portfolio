@@ -133,7 +133,7 @@ nav div a {
 
 #about-me {
     max-height: 85%;
-    background: rgb(231, 245, 249, .8);
+    background: rgb(231, 245, 249, .8) !important;
     margin: 50px 0 50px 0;
     border-style: solid;
     border-width: 10px 0;
@@ -268,7 +268,7 @@ div.card-reveal span.card-title{
 /*======================================================================*/
 /* CONTACT */
 /*======================================================================*/
-.footer {
+#footer {
     width: 100%;
     /* min-height: 40%; */
     /* padding-top: 160px; */
@@ -277,6 +277,7 @@ div.card-reveal span.card-title{
     border-width: 10px 0 0 0;
     border-color: rgb(99, 194, 222);
     border-radius: 50% 50% 0 0;
+    color: white;
     /* position: absolute;
     bottom: 0; */
     /* clear: left; */
