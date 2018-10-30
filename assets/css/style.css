@@ -29,6 +29,11 @@ body, html{
     font-size: 1.5vw;
 }
 
+/* BOLD */
+.bold {
+    font-weight: bold;
+}
+
 /* SPACING */
 .padding {
     padding: 10px;
@@ -175,22 +180,13 @@ nav div a {
     transform: scale(1.3);
 }
 
-#about-me div h2 {
-    font-weight: bold;
-}
-
 #slashes {
-    color: rgb(99, 194, 222);
+    color: rgb(248, 179, 2); 
 }
 
 #resume-button-color {
     background: rgb(99, 194, 222);
 }
-
-#resume-button {
-    padding-top: 20px;
-}
-
 
 /*======================================================================*/
 /* PROJECTS */
@@ -216,6 +212,14 @@ nav div a {
 
 .projects-slashes {
     color: rgb(99, 194, 222);
+}
+
+/* Hover Filter */
+.button:hover {
+    color: rgb(99, 194, 222); 
+}
+.is-checked {
+    color: rgb(248, 179, 2); 
 }
 
 #projects div h2 {
@@ -291,7 +295,7 @@ div.card-reveal span.card-title{
 }
 
 #contact {
-    /* padding-bottom: 20px; */
+    padding-bottom: 20px;
 }
 
 a {
@@ -369,19 +373,10 @@ a {
     .brand-logo {
         font-size: 7vw !important;
     }
-    
 }
 
-
-/* HIDE ABOUT ICONS */
+/* 748px */
 @media screen and (max-width: 748px) {
-
-    #hide-about-icons {
-        display: none;
-    }
-    #resume-button {
-        padding-top: 0;
-    }
 
     .filters-button-group {
         text-align: center;
@@ -389,31 +384,11 @@ a {
         display: block !important;
     }
 
+    /* Section Titles */
     .header {
         font-size: 20pt;
     }
 }
-
-/* Format Footer */
-/* @media screen and (max-width: 992px) {
-    .bottombg {
-        min-height: 160%;
-    }
-    .footer {
-        min-height: 30%;
-    }
-    
-}
-
-@media screen and (max-width: 600px) {
-    .bottombg {
-        min-height: 260%;
-    }
-    .footer {
-        min-height: 10%;
-    }
-    
-} */
 
 /*==================*/
 /* Scrollbar */
