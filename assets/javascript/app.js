@@ -141,7 +141,7 @@ $(document).ready(function () {
     console.log('nvh', nvh);
 
 
-    // Set height on resize
+    // Set height on resize - This may be causing with mobile scroll hiccups
     $(window).resize(function () {
         vph = $(window).height();
         nvh = $('#navbar').height();
