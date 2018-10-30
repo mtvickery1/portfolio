@@ -252,75 +252,59 @@ a {
 /*======================================================================*/
 /* MEDIA QUERIES */
 /*======================================================================*/
-/* Resizes Landing Background */
+/* Centers Landing Background */
 @media screen and (max-width: 1432px) {
-    /* .gorge {
-        background-image: url("../images/night.jpg");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        margin: 0px;
-        padding: 0px;
-        max-width: 100%;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        background-position: 60% 40%;
+    .gorge {
+        background-position: 47% 53%;
     }
-
-    .trees {
-        background-image: url("../images/trees.jpg");
-        background-position: center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        border-style: solid;
-        border-width: 10px 0 10px 0;
-        border-color: rgb(99, 194, 222);
-    } */
-
 }
 
-/*==================*/
-/* MATERIALIZE */
-/*==================*/
+/*============================*/
+/* MATERIALIZE RESPONSIVENESS */
+/*============================*/
 /* LARGE */
 @media screen and (max-width: 1200px) {
     
 }
 /* MEDIUM */
 @media screen and (max-width: 992px) {
+    /* Isotope */
     .element-item {
         width: 50% !important;
     }
 }
 /* SMALL */
 @media screen and (max-width: 600px) {
+    /* Isotope */
     .element-item {
         width: 100% !important;
     }
+    /* Filter Buttons */
     .filters-button-group {
         font-size: 2.5vw;
     }
+
+    /* Hello Div */
     .big-text {
         font-size: 10vw;
     }
-    
     .small-text {
         font-size: 2.5vw;
     }
+
+    /* Brand */
     .brand-logo {
         font-size: 7vw !important;
     }
 }
 
+/*============================*/
+/* GENERAL RESPONSIVENESS */
+/*============================*/
 /* 748px */
 @media screen and (max-width: 748px) {
 
+    /* Center Filter Buttons */
     .filters-button-group {
         text-align: center;
         padding: 10px;
@@ -336,7 +320,7 @@ a {
 /*==================*/
 /* Scrollbar */
 /*==================*/
-/* width */
+/* Width */
 ::-webkit-scrollbar {
     width: 7px;
 }
