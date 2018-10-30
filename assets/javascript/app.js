@@ -54,7 +54,7 @@ $(document).ready(function () {
         // var projectsHeight = $('.project-section').height();
         aboutTrigger = landHeight - nvh;
         var projectsTrigger = aboutTrigger + aboutHeight + 10;
-        var contactTrigger = $(document).height() - $(window).height();
+        var contactTrigger = $(document).height() - $(window).height() - 10;
 
         console.log('landHeight', landHeight);
         console.log('scrollPosition', scrollPosition);
@@ -109,7 +109,7 @@ $(document).ready(function () {
     // var projectsHeight = $('.project-section').height();
     aboutTrigger = landHeight - nvh;
     var projectsTrigger = aboutTrigger + aboutHeight + 10;
-    var contactTrigger = $(document).height() - $(window).height();
+    var contactTrigger = $(document).height() - $(window).height() - 10;
     // ABOUT
     if (scrollPosition >= aboutTrigger && scrollPosition < projectsTrigger) {
         $(".nav-about").addClass('highlight').siblings().removeClass('highlight');
@@ -133,6 +133,10 @@ $(document).ready(function () {
         $(".nav-contact").removeClass('highlight');
     }
 
+
+    //======================================================================
+    // RESPONSIVE ABOUT SECTION
+    //======================================================================
     // Set height on load
     vph = $(window).height();
     nvh = $('#navbar').height();
