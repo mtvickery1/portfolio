@@ -13,6 +13,6 @@ View my portfolio at https://mtvickery1.github.io/portfolio/
 |Bamazon|[GitHub](https://github.com/mtvickery1/bamazon)|A command line interface app illustrating the basics of NodeJS and SQL by interacting with user input and database information. You are able to see items for sale as a customer and also add items to inventory as manager.|
 |Liri|[GitHub](https://github.com/mtvickery1/liri-node-app)|A command line interface app that leverages several APIs to return results for songs, movies, and nearby concerts.|
 |[GIFTastic](https://mtvickery1.github.io/GIFTastic/)|[GitHub](https://github.com/mtvickery1/GIFTastic)|Front end app with a simple interface to search on your favorite GIFs!|
+|[Train Schedule](https://mtvickery1.github.io/Train-Schedule/)|[GitHub](https://github.com/mtvickery1/Train-Schedule)|Front end app using Firebase to store information.|
 |[Space Trivia](https://mtvickery1.github.io/TriviaGame/)|[GitHub](https://github.com/mtvickery1/TriviaGame)|Front end trivia quiz using JavaScript Timing events.|
 |[Rock Collector](https://mtvickery1.github.io/Rock-Collector/)|[GitHub](https://github.com/mtvickery1/Rock-Collector)|Front end game using HTML, CSS and JavaScript.|
-|[Train Schedule](https://mtvickery1.github.io/Train-Schedule/)|[GitHub](https://github.com/mtvickery1/Train-Schedule)|Front end app using Firebase to store information.|
