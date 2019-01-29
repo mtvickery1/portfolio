@@ -30,6 +30,11 @@ body, html{
     color: black;
 }
 
+::selection {
+  background: rgb(248, 179, 2); 
+  color: rgb(99, 194, 222);
+}
+
 /* FONTS */
     /* font-family: 'Ubuntu', sans-serif; */
     /* font-family: 'Indie Flower', cursive; */
