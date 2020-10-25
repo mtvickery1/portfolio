@@ -105,7 +105,7 @@ $(document).ready(function () {
   });
 
   //======================================================================
-  // CUSTOM SCROLLSPY ON LOAD
+  // CUSTOM SCROLLSPY
   //======================================================================
   nvh = $('#navbar').height();
   scrollPosition = $(window).scrollTop();
